@@ -1,10 +1,7 @@
-function longTask1() {
-    console.log("1st task end");
-}
-function longTask2() {
-    console.log("2nd task end");
+function longTask(t) {
+    console.log(t, "task end");
 }
 console.log("start");
-setTimeout(longTask2, 0);
-longTask1();
+setTimeout(longTask, 0, "NonBlocking");
+longTask("Blocking");
 console.log("next work");
