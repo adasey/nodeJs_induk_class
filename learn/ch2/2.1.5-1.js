@@ -10,3 +10,5 @@ var candyMachine = {
 };
 var getCandy = candyMachine.getCandy;
 var count = candyMachine.status.count;
+
+console.log(getCandy(), count);

@@ -15,3 +15,14 @@ function not1(x) {
 }
 
 const not2 = x => !x;
+
+console.log(
+  add1(1, 1),
+  add2(1, 2),
+  add3(1, 3),
+  add4(1, 4),
+  not1(''),
+  not1(null),
+  not2(0),
+  not2('a')
+  );

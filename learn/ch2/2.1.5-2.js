@@ -8,4 +8,6 @@ const candyMachine = {
     return this.status.count;
   },
 };
-const { getCandy, status: { count } } = candyMachine;
+const { getCandy, status: { name, count }, status } = candyMachine;
+
+console.log(getCandy, name, count, status);

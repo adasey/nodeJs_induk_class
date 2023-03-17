@@ -1,10 +1,10 @@
-class Human {
+class Apes {
   constructor(type = 'human') {
     this.type = type;
   }
 
-  static isHuman(human) {
-    return human instanceof Human;
+  static isHuman(apes) {
+    return apes instanceof Apes;
   }
 
   breathe() {
@@ -12,7 +12,7 @@ class Human {
   }
 }
 
-class Zero extends Human {
+class Human extends Apes {
   constructor(type, firstName, lastName) {
     super(type);
     this.firstName = firstName;
@@ -25,5 +25,5 @@ class Zero extends Human {
   }
 }
 
-const newZero = new Zero('human', 'Zero', 'Cho');
-Human.isHuman(newZero); // true
+const newHuman = new Human('human', 'Zero', 'Cho');
+Apes.isHuman(newHuman); // true

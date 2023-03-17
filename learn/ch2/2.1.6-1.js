@@ -1,25 +1,25 @@
-var Human = function(type) {
+var Apes = function(type) {
   this.type = type || 'human';
 };
 
-Human.isHuman = function(human) {
-  return human instanceof Human;
+Apes.isHuman = function(apes) {
+  return apes instanceof Apes;
 }
 
-Human.prototype.breathe = function() {
+Apes.prototype.breathe = function() {
   alert('h-a-a-a-m');
 };
 
-var Zero = function(type, firstName, lastName) {
-  Human.apply(this, arguments);
+var Human = function(type, firstName, lastName) {
+  Apes.apply(this, arguments);
   this.firstName = firstName;
   this.lastName = lastName;
 };
 
-Zero.prototype = Object.create(Human.prototype);
-Zero.prototype.constructor = Zero; // 상속하는 부분
-Zero.prototype.sayName = function() {
+Human.prototype = Object.create(Apes.prototype);
+Human.prototype.constructor = Human; // 상속하는 부분
+Human.prototype.sayName = function() {
   alert(this.firstName + ' ' + this.lastName);
 };
-var oldZero = new Zero('human', 'Zero', 'Cho');
-Human.isHuman(oldZero); // true
+var oldZero = new Human('human', 'Zero', 'Cho');
+console.log(Apes.isHuman(oldZero)); // true
