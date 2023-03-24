@@ -1,4 +1,4 @@
 const A = require('./globalA');
 
-global.message = '안녕하세요';
+global.message = '안녕하세요 test';
 console.log(A());
