@@ -32,7 +32,7 @@ http.createServer(async (req, res) => {
     res.end(`${cookies.name}님 안녕하세요`);
   } else {
     try {
-      const data = await fs.readFile('./cookie2.html');
+      const data = await fs.readFile('./learn/ch4/4.3/cookie2.html');
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end(data);
     } catch (err) {

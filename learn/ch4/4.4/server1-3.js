@@ -2,11 +2,11 @@ const https = require('https');
 const fs = require('fs');
 
 https.createServer({
-  cert: fs.readFileSync('도메인 인증서 경로'),
-  key: fs.readFileSync('도메인 비밀키 경로'),
+  cert: fs.readFileSync('./learn/cert/server.crt'),
+  key: fs.readFileSync('./learn/cert/server.key'),
   ca: [
-    fs.readFileSync('상위 인증서 경로'),
-    fs.readFileSync('상위 인증서 경로'),
+    fs.readFileSync('./learn/cert/rootCA.crt'),
+    fs.readFileSync('./learn/cert/rootCA.key'),
   ],
 }, (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });

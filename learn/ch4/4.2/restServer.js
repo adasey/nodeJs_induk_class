@@ -7,11 +7,11 @@ http.createServer(async (req, res) => {
   try {
     if (req.method === 'GET') {
       if (req.url === '/') {
-        const data = await fs.readFile('./restFront.html');
+        const data = await fs.readFile('./learn/ch4/4.2/restFront.html');
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
         return res.end(data);
       } else if (req.url === '/about') {
-        const data = await fs.readFile('./about.html');
+        const data = await fs.readFile('./learn/ch4/4.2/about.html');
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
         return res.end(data);
       } else if (req.url === '/users') {
