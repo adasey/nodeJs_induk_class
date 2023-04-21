@@ -1,0 +1,11 @@
+{
+  "name": "04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "04.js",
+  "scripts": {
+    "start": "node 04"
+  },
+  "author": "",
+  "license": "ISC"
+}
