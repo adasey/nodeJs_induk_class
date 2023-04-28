@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "comsoft",
+    "password": "Comsoft7638",
+    "database": "test",
+    "host": "10.71.131.100",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "comsoft",
+    "password": "Comsoft7638",
+    "database": "database_test",
+    "host": "10.71.131.100",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "comsoft",
+    "password": "Comsoft7638",
+    "database": "database_production",
+    "host": "10.71.131.100",
+    "dialect": "mysql"
+  }
+}
